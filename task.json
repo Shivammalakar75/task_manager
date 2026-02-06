@@ -18,5 +18,13 @@
             "description": "introduction, variables, operators, control flow if/else/looping",
             "status": "pending"
         }
+    ],
+    "shubham": [
+        {
+            "id": 1,
+            "title": "java basics",
+            "description": "introduction, variables, data types, access modifiers, scopes, operators, control flow",
+            "status": "pending"
+        }
     ]
 }
