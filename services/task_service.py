@@ -18,8 +18,8 @@ def add_task():
     tasks = get_user_task()
 
     id = generate_id(tasks)
-    title = input("Enter title : ")
-    description = input("Enter description : ")
+    title = input("Enter title : ").strip()
+    description = input("Enter description : ").strip()
 
     task = {
         "id": id,
@@ -55,10 +55,10 @@ def update_task():
 
             match choice:
                 case 1:
-                    title = input("Enter Title : ")
+                    title = input("Enter Title : ").strip()
                     t["title"] = title
                 case 2:
-                    description = input("Enter description : ")
+                    description = input("Enter description : ").strip()
                     t["description"] = description
                 case _:
                     print("invalid choice")
