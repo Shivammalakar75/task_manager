@@ -1,0 +1,22 @@
+{
+    "shivam": [
+        {
+            "id": 2,
+            "title": "python data structure",
+            "description": "list, dict, set, tuple, arrays",
+            "status": "complete"
+        },
+        {
+            "id": 3,
+            "title": "file handling",
+            "description": "file utility operations, file read write operations",
+            "status": "complete"
+        },
+        {
+            "id": 4,
+            "title": "python basic",
+            "description": "introduction, variables, operators, control flow if/else/looping",
+            "status": "pending"
+        }
+    ]
+}
