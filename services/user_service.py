@@ -8,11 +8,11 @@ def register():
     users = load_users()
 
     username: str = input("Enter your name : ").strip()
-    if username.lower() in str(users[username]).lower():
+    password: str = input("Enter your password : ").strip()
+    if username.lower() in str(users[username]).lower() and users[username]["password"] == password:
         print("user already exists")
         return
     
-    password: str = input("Enter your password : ").strip()
     user = User(username, password)
     users[username] = user.to_dict()
     save_users(users)
