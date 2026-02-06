@@ -7,12 +7,12 @@ import auth.auth_decorator as auth
 def register():
     users = load_users()
 
-    username: str = input("Enter your name : ")
+    username: str = input("Enter your name : ").strip()
     if username in users:
         print("user already exists")
         return
     
-    password: str = input("Enter your password : ")
+    password: str = input("Enter your password : ").strip()
     user = User(username, password)
     users[username] = user.to_dict()
     save_users(users)
@@ -21,8 +21,8 @@ def register():
 def login():
     users = load_users()
 
-    username: str = input("Enter your name : ")
-    password: str = input("Enter your password : ")
+    username: str = input("Enter your name : ").strip()
+    password: str = input("Enter your password : ").strip()
 
     if username in users and users[username]["password"] == password:
         auth.CURRENT_USER = username
