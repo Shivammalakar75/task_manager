@@ -25,6 +25,12 @@
             "title": "java basics",
             "description": "introduction, variables, data types, access modifiers, scopes, operators, control flow",
             "status": "pending"
+        },
+        {
+            "id": 2,
+            "title": "java core",
+            "description": "strings, arrays, wrapping , unwrapping, constructors, super(), this",
+            "status": "pending"
         }
     ]
 }
