@@ -8,7 +8,7 @@ def register():
     users = load_users()
 
     username: str = input("Enter your name : ").strip()
-    if username in users:
+    if username.lower() in str(users[username]).lower():
         print("user already exists")
         return
     
@@ -21,10 +21,10 @@ def register():
 def login():
     users = load_users()
 
-    username: str = input("Enter your name : ").strip()
-    password: str = input("Enter your password : ").strip()
+    username: str = input("Enter your name : ").strip().lower()
+    password: str = input("Enter your password : ").strip().lower()
 
-    if username in users and users[username]["password"] == password:
+    if username.lower() in str(users[username]).lower() and users[username]["password"] == password:
         auth.CURRENT_USER = username
         print("login successfully")
     else:
